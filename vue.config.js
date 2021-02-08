@@ -4,7 +4,11 @@ module.exports = {
   pwa: {
     name: 'Finanças Pessoais',
     workboxPluginMode: 'GenerateSW',
+    themeColor: '#3B13A9',
     manifestPath: 'manifest.json',
+    manifestOptions: {
+      background_color: '#3B13A9',
+    },
     iconPaths: {
       appleTouchIcon: 'img/icons/apple-touch-icon-152x152.png',
       favicon16: 'img/icons/favicon-16x16.png',

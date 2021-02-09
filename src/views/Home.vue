@@ -1,18 +1,37 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <NavbarMobile
+      :navigationLevel="1"
+    />
+    <main>
+      <p>Calma jovem Padawan...</p>
+      <small>Aguarde as cenas dos próximos capítulos</small>
+    </main>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import NavbarMobile from '@/components/NavbarMobile.vue';
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld,
+    NavbarMobile,
   },
 };
 </script>
+<style lang="scss">
+  .home {
+    width: 100%;
+    height: 100%;
+    main {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+</style>

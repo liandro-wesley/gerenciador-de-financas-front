@@ -7,25 +7,14 @@
 <style lang="scss">
 @import '@/assets/scss/reset.scss';
 @import '@/assets/scss/colors.scss';
-#app {
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
-  font-family: 'Open Sans', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+
+body {
+  background-color: $gray-bg;
   color: $black;
 }
-
-#nav {
-  padding: 30px;
+#app {
+  width: 100%;
+  height: 100%;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>

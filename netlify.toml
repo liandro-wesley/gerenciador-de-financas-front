@@ -1,0 +1,26 @@
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+
+  # optional, fails build when a category is below a threshold
+  [plugins.inputs.thresholds]
+    performance = 0.9
+    accessibility = 0.9
+    best-practices = 0.9
+    seo = 0.9
+    pwa = 0.9
+
+[[plugins]]
+package = "@netlify/plugin-sitemap"
+
+[[plugins]]
+  package = "netlify-plugin-submit-sitemap"
+
+	[plugins.inputs]
+
+	baseUrl = "https://controlador-de-financas.netlify.app/"
+
+	providers = [
+		"google",
+		"bing",
+		"yandex"
+	]

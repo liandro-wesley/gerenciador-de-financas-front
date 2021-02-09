@@ -22,6 +22,3 @@ jobs:
           NETLIFY_AUTH_TOKEN: 9QtkWkUzGtKXEabeMvhElD4r3Ajeyj7It6DMJRnTRzA
           NETLIFY_SITE_ID: 20e2d45d-14bf-411e-9efa-1d465ca678d5
           NETLIFY_DEPLOY_MESSAGE: 'Prod deploy v${{ github.ref }}'
-          install_command: npm install
-          build_directory: dist/
-          build_command: npm run build

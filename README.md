@@ -1,4 +1,4 @@
-# gerenciador-de-financas-front
+[![Netlify Status](https://api.netlify.com/api/v1/badges/20e2d45d-14bf-411e-9efa-1d465ca678d5/deploy-status)](https://app.netlify.com/sites/controlador-de-financas/deploys)
 
 ## Project setup
 ```

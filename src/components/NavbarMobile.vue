@@ -130,10 +130,13 @@ export default {
       bottom: 0;
       right: 0;
       left: 0;
-      padding: 0 25px;
+      padding: 0 30px;
 
       li {
-        margin-right: 20px !important;
+        margin-right: 30px !important;
+        &:last-of-type {
+          margin-right: 0 !important;
+        }
       }
     }
 

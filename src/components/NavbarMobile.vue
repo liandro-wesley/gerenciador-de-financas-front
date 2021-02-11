@@ -64,11 +64,11 @@ export default {
 
       navigationStructurePrimary: [
         {
-          route: '/about',
+          route: '/settings',
           icon: 'fas fa-cog',
         },
         {
-          route: '/abouts',
+          route: '/logout',
           icon: 'fas fa-power-off',
         },
       ],

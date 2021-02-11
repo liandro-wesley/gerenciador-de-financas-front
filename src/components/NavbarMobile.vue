@@ -166,6 +166,11 @@ export default {
             color: $purple-icon;
             font-size:24px;
             padding: 8px;
+            &.router-link-exact-active {
+              background-color: #4B0FD3;
+              border-radius: 4px;
+              color: $white;
+            }
             &:hover {
               background-color: #4B0FD3;
               border-radius: 4px;

@@ -3,7 +3,7 @@
     <h1>Oops!</h1>
     <p>Nós não conseguimos localizar a página que você procura</p>
     <Buttons
-      :button="{type: 'link', text: 'Ir à home' , action: '/'}"
+      :settings="{type: 'link', text: 'Ir à home' , action: '/', color: 'outlined--white'}"
     />
   </section>
 </template>

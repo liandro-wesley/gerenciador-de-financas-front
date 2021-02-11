@@ -1,11 +1,11 @@
 <template>
   <div>
     <router-link
-      v-if="button.type === 'link'"
-      :to="button.action"
-      class="btn btn__link btn__link__outlined--white"
+      v-if="settings.type === 'link'"
+      :to="settings.action"
+      :class="'btn btn__link btn__link__' + settings.color"
     >
-      {{button.text}}
+      {{settings.text}}
     </router-link>
   </div>
 </template>
@@ -13,10 +13,11 @@
 export default {
   name: 'Buttons',
   props: {
-    button: {
+    settings: {
       type: Object,
       text: Object,
       action: Object,
+      color: Object,
     },
   },
 };
@@ -43,6 +44,22 @@ export default {
           &:hover {
             background-color: $white;
             color: $black;
+          }
+        }
+        &--purple {
+          color: $purple;
+          border: 2px solid $purple;
+          &:hover {
+            background-color: $purple;
+            color: $white;
+          }
+        }
+        &--purple-light {
+          color: purple-light;
+          border: 2px solid purple-light;
+          &:hover {
+            background-color: purple-light;
+            color: $white;
           }
         }
 

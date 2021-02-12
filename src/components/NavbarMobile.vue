@@ -128,11 +128,11 @@ export default {
     }
     &__secondary {
       position: fixed;
-      z-index: 1;
       bottom: 0;
       right: 0;
       left: 0;
       padding: 0 30px;
+      margin-top: 60px;
 
       li {
         margin-right: 30px !important;

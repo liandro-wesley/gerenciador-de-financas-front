@@ -103,6 +103,10 @@ export default {
       background-color: $pink;
       text-transform: uppercase;
       margin-bottom: 10px;
+      @media screen  and (min-width: $md){
+        width: 350px;
+        margin-left: 10px;
+      }
 
       &__structure {
 
@@ -158,6 +162,10 @@ export default {
       background-color: $pink;
       text-transform: uppercase;
       margin-bottom: 10px;
+      @media screen  and (min-width: $md){
+        width: 350px;
+        margin-left: 10px;
+      }
 
       &__structure {
 

@@ -6,10 +6,12 @@
     <div class="navbar-mobile__primary__profile">
       <div class="navbar-mobile__primary__profile__col">
         <div class="navbar-mobile__primary__profile__col--1">
-          foto
+          <img src="https://www.github.com/liandro-wesley.png" alt="Foto de perfil">
         </div>
         <div class="navbar-mobile__primary__profile__col--2">
-          <span>Liandro</span>
+          <span>
+            {{settingsForProfile.name.firstName}}
+          </span>
         </div>
       </div>
     </div>
@@ -62,6 +64,10 @@ export default {
     return {
       settingsForProfile: {
         src: '',
+        name: {
+          firstName: 'Liandro',
+          surName: 'Wesley',
+        },
       },
 
       navigationStructurePrimary: [
@@ -120,7 +126,34 @@ export default {
         height: 100%;
 
         &__col {
+          display: flex;
+          align-items: center;
           color: $white;
+          &--1{
+            border-radius: 100%;
+            background-color: $white;
+            width: 47px;
+            height: 47px;
+            display: flex;
+            justify-content: center;
+            border: 2px solid $white;
+            img {
+              width: 100;
+              object-fit: cover;
+              border-radius: 100%;
+
+            }
+          }
+          &--2 {
+            padding-left: 8px;
+            display: flex;
+            align-items: center;
+            span{
+              font-family: 'Open Sans', sans-serif;
+              font-weight: 600;
+              font-size: 1.125rem;
+            }
+          }
         }
 
       }

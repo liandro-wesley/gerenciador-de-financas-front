@@ -30,6 +30,23 @@
           }"
         />
       </section>
+      <section class="transactions">
+        <Section
+          title="Ganho x Gasto"
+        >
+          Aqui entrará um gráfico
+        </Section>
+        <Section
+          title="Transações"
+        >
+          Aqui entrará o histórico de transação
+        </Section>
+        <Section
+          title="Staus das metas"
+        >
+          Aqui entrará as metas e os percentuais que falta para completá-las
+        </Section>
+      </section>
     </main>
     <div class="helper"></div>
     <NavbarMobile
@@ -42,12 +59,14 @@
 // @ is an alias to /src
 import NavbarMobile from '@/components/NavbarMobile.vue';
 import Cards from '@/components/Cards.vue';
+import Section from '@/components/Section.vue';
 
 export default {
   name: 'Home',
   components: {
     NavbarMobile,
     Cards,
+    Section,
   },
 };
 </script>
@@ -59,13 +78,14 @@ export default {
     .helper {
       height: 120px;
     }
-
     .resume {
       padding: 14px 5px 5px 5px;
       display: block;
-      @media screen  and (min-width: $sm){
-        max-width: 50%;
-        margin: 0 auto;
+      @media screen  and (min-width: $md){
+        max-width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
       }
       @media screen  and (min-width: $lg){
         .helper {
@@ -79,6 +99,10 @@ export default {
         max-width: none;
         display: none;
       }
+    }
+    .transactions {
+      padding: 0px 5px 5px 5px;
+      margin-bottom: 10px;
     }
 
   }

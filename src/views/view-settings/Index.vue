@@ -7,7 +7,7 @@
       <Section
         title="Informação pessoal"
       >
-        Aqui entrará informações pessoais
+        <PersonalInfo/>
       </Section>
       <Section
         title="Acessibilidade"
@@ -22,7 +22,6 @@
       <Section
         title="Área perigosa"
       >
-        Aqui entrará recursos da conta
       </Section>
     </main>
     <div class="helper"></div>
@@ -37,11 +36,15 @@
 import NavbarMobile from '@/components/NavbarMobile.vue';
 import Section from '@/components/Section.vue';
 
+/* Importação de componentes locais */
+import PersonalInfo from './components/PersonalInfo.vue';
+
 export default {
   name: 'Home',
   components: {
     NavbarMobile,
     Section,
+    PersonalInfo,
   },
 };
 </script>

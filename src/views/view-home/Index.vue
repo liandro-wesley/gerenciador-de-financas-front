@@ -6,28 +6,24 @@
     <main>
       <section class="resume">
         <Cards
-          :cards="{type: 'total', title: 'Saldo em conta', value: 'R$ 3.000,00'}"
+          type= 'total'
+          title='Saldo em conta'
+          value='3000'
         />
         <Cards
-          :cards="{
-            type: 'saidas',
-            title: 'Saídas',
-            value: 'R$ 1.000,00',
-          }"
+          type= 'saidas'
+          title= 'Saídas'
+          value= '1000'
         />
         <Cards
-          :cards="{
-            type: 'agendados',
-            title: 'Agendados',
-            value: 'R$ 1.000,00',
-          }"
+            type= 'agendados'
+            title= 'Agendados'
+            value= '1000'
         />
         <Cards
-          :cards="{
-            type: 'entradas',
-            title: 'Entradas',
-            value: 'R$ 3.000,00',
-          }"
+            type= 'entradas'
+            title= 'Entradas'
+            value= '3000'
         />
       </section>
       <section class="transactions">

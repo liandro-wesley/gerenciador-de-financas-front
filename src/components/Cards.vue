@@ -1,72 +1,72 @@
 <template>
   <div>
     <section
-      v-if="cards.type === 'total'"
+      v-if="type === 'total'"
       class="card"
     >
       <div class="card__structure">
         <div class="card__structure card__structure__row">
             <div class="card__structure__row card__structure__row__col">
-              <h2>{{cards.title}}</h2>
+              <h2>{{title}}</h2>
             </div>
         </div>
         <div class="card__structure card__structure__row">
             <div class="card__structure__row card__structure__row__col">
-              <p>{{cards.value}}</p>
+              <p>{{new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(value)}}</p>
             </div>
         </div>
       </div>
     </section>
     <section
-      v-if="cards.type === 'entradas'"
+      v-if="type === 'entradas'"
       class="card card__resume--entradas"
     >
       <div class="card__structure">
         <div class="card__structure card__structure__row">
             <div class="card__structure__row card__structure__row__col">
-              <h2>{{cards.title}}</h2>
+              <h2>{{title}}</h2>
               <img src="@/assets/images/entradas.png" alt="Entradas">
             </div>
         </div>
         <div class="card__structure card__structure__row">
             <div class="card__structure__row card__structure__row__col">
-              <p>+{{cards.value}}</p>
+              <p>+ {{new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(value)}}</p>
             </div>
         </div>
       </div>
     </section>
     <section
-      v-if="cards.type === 'saidas'"
+      v-if="type === 'saidas'"
       class="card card__resume--saidas"
     >
       <div class="card__structure">
         <div class="card__structure card__structure__row">
             <div class="card__structure__row card__structure__row__col">
-              <h2>{{cards.title}}</h2>
+              <h2>{{title}}</h2>
               <img src="@/assets/images/saidas.png" alt="Entradas">
             </div>
         </div>
         <div class="card__structure card__structure__row">
             <div class="card__structure__row card__structure__row__col">
-              <p>- {{cards.value}}</p>
+              <p>- {{new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(value)}}</p>
             </div>
         </div>
       </div>
     </section>
     <section
-      v-if="cards.type === 'agendados'"
+      v-if="type === 'agendados'"
       class="card card__resume--agendados"
     >
       <div class="card__structure">
         <div class="card__structure card__structure__row">
             <div class="card__structure__row card__structure__row__col">
-              <h2>{{cards.title}}</h2>
+              <h2>{{title}}</h2>
               <img src="@/assets/images/saidas-agendadas.png" alt="Entradas">
             </div>
         </div>
         <div class="card__structure card__structure__row">
             <div class="card__structure__row card__structure__row__col">
-              <p>- {{cards.value}}</p>
+              <p>- {{new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(value)}}</p>
             </div>
         </div>
       </div>
@@ -74,19 +74,20 @@
   </div>
 </template>
 <script>
+// import * as StringUtil from '@/utils/StringUtil';
+
 export default {
   name: 'Card',
   props: {
-    cards: {
-      type: Object,
-      title: Object,
-      value: Object,
-      icon: Object,
-    },
+    type: String,
+    title: String,
+    value: String,
+    icon: String,
   },
   data() {
     return {
-
+      methods: {
+      },
     };
   },
 };

@@ -40,6 +40,7 @@ export default {
       background-color: $white;
       border-radius: 8px;
       min-height: 150px;
+      max-width: 1140px;
       box-shadow: 0px 1px 4px -2px rgba(75, 15, 211, 0.25);
 
       header {
@@ -74,6 +75,7 @@ export default {
       color: $white;
       border-radius: 8px;
       min-height: 150px;
+      max-width: 1140px;
       box-shadow: 0px 1px 4px -2px rgba(75, 15, 211, 0.25);
 
       header {
